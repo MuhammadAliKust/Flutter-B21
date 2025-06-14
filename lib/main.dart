@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_b21/login.dart';
 
 import 'asset_image.dart';
+import 'list_view_demo.dart';
 import 'network_image.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginView(),
+      home: ListViewDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
