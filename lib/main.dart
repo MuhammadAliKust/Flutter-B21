@@ -3,6 +3,7 @@ import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
 
 import 'asset_image.dart';
+import 'dynamic_list_view.dart';
 import 'list_view_demo.dart';
 import 'network_image.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MultipleSelectionDemo(),
+      home: DynamicListView(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
