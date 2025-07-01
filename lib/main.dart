@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
+import 'package:flutter_b21/page_view.dart';
 
 import 'asset_image.dart';
 import 'dynamic_list_view.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DynamicListView(),
+      home: PageViewDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(

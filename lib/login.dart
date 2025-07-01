@@ -44,7 +44,7 @@ class LoginView extends StatelessWidget {
             controller: pwdController,
             enabled: true,
             obscureText: true,
-            obscuringCharacter: '-',
+            obscuringCharacter: '*',
             maxLines: 1,
             decoration: InputDecoration(
               label: Text("Password"),

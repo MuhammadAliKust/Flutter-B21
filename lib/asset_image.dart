@@ -8,7 +8,7 @@ class AssetImageDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Asset Image")),
       body: Image.asset(
-        'assets/images/1.png',
+        'assets/images/register.PNG',
         height: 100,
         fit: BoxFit.fill,
         width: 300,
