@@ -5,38 +5,39 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 class PageViewDemo extends StatelessWidget {
   PageViewDemo({super.key});
 
-  PageController controller = PageController();
   List<OnBoardingModel> onBoardingList = [
-    OnBoardingModel(title: 'Trending news', image: 'assets/images/Group.png'),
+    OnBoardingModel(image: 'assets/images/Group.png', title: 'Trending news'),
     OnBoardingModel(
-      title: 'React,Save & Share News',
       image: 'assets/images/Group-1.png',
+      title: 'React,Save & Share News',
     ),
     OnBoardingModel(
-      title: 'Video & live News From Youtube',
       image: 'assets/images/Group-2.png',
+      title: 'Video & live News From Youtube',
     ),
     OnBoardingModel(
-      title: 'Browse News From Variety Of Categories',
       image: 'assets/images/Group-3.png',
+      title: 'Browse News From Variety Of Categories',
     ),
   ];
+
+  PageController controller = PageController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Page View")),
+      appBar: AppBar(title: Text("Page View Demo")),
       body: Column(
         children: [
           Expanded(
             child: PageView.builder(
               controller: controller,
-              scrollDirection: Axis.horizontal,
               itemCount: onBoardingList.length,
+              scrollDirection: Axis.horizontal,
               itemBuilder: (context, i) {
                 return Column(
                   children: [
-                    Image.asset(onBoardingList[i].image),
+                    Image.asset(onBoardingList[i].image.toString()),
                     Text(
                       onBoardingList[i].title,
                       style: TextStyle(
@@ -55,7 +56,7 @@ class PageViewDemo extends StatelessWidget {
             effect: ExpandingDotsEffect(), // your preferred effect
             onDotClicked: (index) {},
           ),
-          SizedBox(height: 160),
+          SizedBox(height: 100),
         ],
       ),
     );
