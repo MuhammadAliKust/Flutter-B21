@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
 import 'package:flutter_b21/page_view.dart';
 
-
+import 'Student_profile.dart';
 import 'asset_image.dart';
+import 'bottom_nav_bar.dart';
 import 'dynamic_list_view.dart';
-import 'grid_view.dart';
 import 'list_view_demo.dart';
 import 'network_image.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GridViewDemo(),
+      home: BottomNavBarDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(

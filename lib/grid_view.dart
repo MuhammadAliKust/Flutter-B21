@@ -11,32 +11,26 @@ class GridViewDemo extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: GridView.builder(
-          itemCount: 6,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
-            childAspectRatio: 3.5,
+            childAspectRatio: 3,
           ),
           itemBuilder: (context, i) {
-            return InkWell(
-              onTap: () {},
-              child: Container(
-                height: 100,
-                width: 1000,
-                decoration: BoxDecoration(
-                  color: Color(0xffb7bac2),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.blue, width: 3),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(Icons.add, size: 30),
-                    Text("All", style: TextStyle(fontSize: 30)),
-                    Icon(Icons.add, size: 30),
-                  ],
-                ),
+            return Container(
+              decoration: BoxDecoration(
+                color: Colors.blue.withOpacity(0.5),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: Colors.blue, width: 6),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Icon(Icons.add),
+                  Text("All", style: TextStyle(fontSize: 30)),
+                  Icon(Icons.add),
+                ],
               ),
             );
           },
