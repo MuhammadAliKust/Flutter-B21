@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-class GridViewDemo extends StatelessWidget {
+class GridViewDemo extends StatefulWidget {
   const GridViewDemo({super.key});
+
+  @override
+  State<GridViewDemo> createState() => _GridViewDemoState();
+}
+
+class _GridViewDemoState extends State<GridViewDemo> {
+  List<int> selectedIndex = [];
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +25,29 @@ class GridViewDemo extends StatelessWidget {
             childAspectRatio: 3,
           ),
           itemBuilder: (context, i) {
-            return Container(
-              decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.blue, width: 6),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Icon(Icons.add),
-                  Text("All", style: TextStyle(fontSize: 30)),
-                  Icon(Icons.add),
-                ],
+            return InkWell(
+              onTap: (){
+
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.blue, width: 6),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Icon(Icons.add),
+                    Text("All", style: TextStyle(fontSize: 30)),
+                    Icon(
+                      Icons.add,
+                      color: selectedIndex.contains(i)
+                          ? Colors.blue
+                          : Colors.grey,
+                    ),
+                  ],
+                ),
               ),
             );
           },
