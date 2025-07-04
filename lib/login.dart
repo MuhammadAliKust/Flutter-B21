@@ -68,6 +68,8 @@ class LoginView extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
+          Divider(),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               if (emailController.text.isEmpty) {

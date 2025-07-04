@@ -1,7 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
-import 'package:flutter_b21/network_image.dart';
+import 'package:flutter_b21/page_view.dart';
 
 class BottomNavBarDemo extends StatefulWidget {
   const BottomNavBarDemo({super.key});
@@ -12,7 +14,7 @@ class BottomNavBarDemo extends StatefulWidget {
 
 class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
   int selectedIndex = 0;
-  List<Widget> screenList = [LoginView(), GridViewDemo(), NetworkImageDemo()];
+  List<Widget> screenList = [LoginView(), GridViewDemo(), PageViewDemo()];
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
       body: screenList.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (tapIndex) {
+          log("Tap Index: $tapIndex");
           selectedIndex = tapIndex;
           setState(() {});
         },
