@@ -4,10 +4,11 @@ import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
 import 'package:flutter_b21/page_view.dart';
-import 'package:flutter_b21/tabbar_view.dart';
+import 'package:flutter_b21/tab_bar.dart';
 
 import 'Student_profile.dart';
 import 'asset_image.dart';
+import 'dialog_box.dart';
 import 'dynamic_list_view.dart';
 import 'list_view_demo.dart';
 import 'network_image.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TabbarViewDemo(),
+      home: DialogBoxDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
