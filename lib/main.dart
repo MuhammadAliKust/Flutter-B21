@@ -4,10 +4,12 @@ import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
 import 'package:flutter_b21/page_view.dart';
+import 'package:flutter_b21/screen_a.dart';
 import 'package:flutter_b21/tab_bar.dart';
 
 import 'Student_profile.dart';
 import 'asset_image.dart';
+import 'bottom_sheet.dart';
 import 'dialog_box.dart';
 import 'dynamic_list_view.dart';
 import 'list_view_demo.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DialogBoxDemo(),
+      home: ScreenAView(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
