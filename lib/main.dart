@@ -4,8 +4,10 @@ import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
 import 'package:flutter_b21/page_view.dart';
+import 'package:flutter_b21/providers/user.dart';
 import 'package:flutter_b21/screen_a.dart';
 import 'package:flutter_b21/tab_bar.dart';
+import 'package:provider/provider.dart';
 
 import 'Student_profile.dart';
 import 'asset_image.dart';
@@ -16,7 +18,12 @@ import 'list_view_demo.dart';
 import 'network_image.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
