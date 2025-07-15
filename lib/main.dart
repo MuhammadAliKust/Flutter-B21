@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b21/bottom_nav_bar.dart';
+import 'package:flutter_b21/google_map.dart';
 import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
 import 'package:flutter_b21/multiple_selection.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TimePickerDemo(),
+      home: GoogleMapDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
