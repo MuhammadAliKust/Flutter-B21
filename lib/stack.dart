@@ -14,7 +14,7 @@ class StackDemo extends StatelessWidget {
 
             child: Image.asset('assets/images/register.PNG'),
           ),
-          Container(height: 300, width: 300, color: Colors.blue),
+          Container(height: 300, width: 300, color: Color(0xff209CEE)),
           Container(height: 200, width: 200, color: Colors.yellow),
           Container(height: 100, width: 100, color: Colors.green),
           CircularProgressIndicator(),
