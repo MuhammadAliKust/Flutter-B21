@@ -7,6 +7,7 @@ import 'package:flutter_b21/multiple_selection.dart';
 import 'package:flutter_b21/page_view.dart';
 import 'package:flutter_b21/providers/user.dart';
 import 'package:flutter_b21/screen_a.dart';
+import 'package:flutter_b21/stack.dart';
 import 'package:flutter_b21/tab_bar.dart';
 import 'package:flutter_b21/time_picker.dart';
 import 'package:provider/provider.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GoogleMapDemo(),
+      home: StackDemo(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
