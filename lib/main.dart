@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_b21/bottom_nav_bar.dart';
+import 'package:flutter_b21/first_screen.dart';
 import 'package:flutter_b21/google_map.dart';
 import 'package:flutter_b21/grid_view.dart';
 import 'package:flutter_b21/login.dart';
@@ -16,8 +17,10 @@ import 'package:provider/provider.dart';
 import 'Student_profile.dart';
 import 'asset_image.dart';
 import 'bottom_sheet.dart';
+import 'bottom_sheet_demo.dart';
 import 'date_picker.dart';
 import 'dialog_box.dart';
+import 'dialog_box_demo.dart';
 import 'dynamic_list_view.dart';
 import 'list_view_demo.dart';
 import 'network_image.dart';
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SearchView(),
+      home: BottomSheetPractice(),
       // home: Scaffold(
       //   backgroundColor: Colors.yellow,
       //   appBar: AppBar(
