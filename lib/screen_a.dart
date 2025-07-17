@@ -15,7 +15,7 @@ class ScreenAView extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             user.setName('Ali');
-            user.setEmail('test@gmail.com');
+            // user.setEmail('test@gmail.com');
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => ScreenBView()),

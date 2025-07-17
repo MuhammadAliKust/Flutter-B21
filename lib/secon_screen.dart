@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_b21/providers/user.dart';
+import 'package:provider/provider.dart';
 
 class SecondScreen extends StatelessWidget {
-  final String name;
-  final String email;
+  const SecondScreen({super.key});
 
-  const SecondScreen({super.key, required this.name, required this.email});
 
   @override
   Widget build(BuildContext context) {
+    var user = Provider.of<UserProvider>(context);
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox(),
@@ -16,9 +17,9 @@ class SecondScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Text(name.toString(), style: TextStyle(fontSize: 40)),
-          Text(email.toString(), style: TextStyle(fontSize: 40)),
-          Center(
+          Text(user.getName().toString(), style: TextStyle(fontSize: 40)),
+          Text(user.getEmail().toString(), style: TextStyle(fontSize: 40)),
+           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);

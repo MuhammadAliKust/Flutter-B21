@@ -19,7 +19,7 @@ class ScreenBView extends StatelessWidget {
       body: Column(
         children: [
           Text(user.getName(),style: TextStyle(fontSize: 40),),
-          Text(user.getEmail(),style: TextStyle(fontSize: 40),),
+          // Text(user.getEmail(),style: TextStyle(fontSize: 40),),
           Center(
             child: ElevatedButton(
               onPressed: () {
